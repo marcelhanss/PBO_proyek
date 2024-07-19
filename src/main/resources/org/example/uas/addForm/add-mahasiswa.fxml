@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="726.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #595959, #181818);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas.controller.AddMahasiswaController">
+    <children>
+        <Label layoutX="322.0" layoutY="24.0" prefHeight="58.0" prefWidth="99.0" text="Student" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="57.0" layoutY="111.0" prefHeight="18.0" prefWidth="85.0" text="First Name:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="363.0" layoutY="111.0" prefHeight="20.0" prefWidth="76.0" text="Last Name:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="first_name_field" layoutX="135.0" layoutY="108.0" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 3;     -fx-border-width: 1;     -fx-text-fill: white; -fx-prompt-text-fill: white;" />
+        <Label layoutX="57.0" layoutY="166.0" prefHeight="18.0" prefWidth="85.0" text="Email:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="email_field" layoutX="135.0" layoutY="163.0" prefHeight="26.0" prefWidth="481.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 3;     -fx-border-width: 1;     -fx-text-fill: white; -fx-prompt-text-fill: white;" />
+        <Label layoutX="57.0" layoutY="223.0" prefHeight="18.0" prefWidth="85.0" text="NRP:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nrp_field" layoutX="135.0" layoutY="219.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 3;     -fx-border-width: 1;     -fx-text-fill: white; -fx-prompt-text-fill: white;" />
+        <Label layoutX="301.0" layoutY="222.0" prefHeight="20.0" prefWidth="141.0" text="Choose Department:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="department_combo_box" layoutX="436.0" layoutY="219.0" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 3;     -fx-border-width: 1;     -fx-text-fill: white; -fx-prompt-text-fill: white;" />
+        <TextField fx:id="last_name_field" layoutX="439.0" layoutY="108.0" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 3;     -fx-border-width: 1;     -fx-text-fill: white; -fx-prompt-text-fill: white;" />
+        <Button fx:id="back_Button" layoutX="57.0" layoutY="284.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Back" textFill="WHITE" />
+        <Button fx:id="submit_Button" layoutX="510.0" layoutY="284.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Submit" textFill="WHITE" />
+    </children>
+</AnchorPane>

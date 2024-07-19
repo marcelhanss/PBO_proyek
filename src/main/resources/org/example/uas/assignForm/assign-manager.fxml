@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="850.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #595959, #181818);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas.controller.AssignManagerController">
+   <children>
+      <Button layoutX="379.0" layoutY="171.0" mnemonicParsing="false" onAction="#addButton" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="&lt;&lt;Add" />
+      <Button layoutX="366.0" layoutY="224.0" mnemonicParsing="false" onAction="#removeButton" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Remove&gt;&gt;" />
+      <TableView fx:id="available_employee_table" layoutX="485.0" layoutY="41.0" prefHeight="303.0" prefWidth="346.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="back_button" layoutX="376.0" layoutY="344.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Back" />
+      <Label layoutX="133.0" layoutY="14.0" style="-fx-text-fill : white;" text="Manager Now">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="14.0" style="-fx-text-fill : white;" text="Available Employees">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="manager_table" layoutX="14.0" layoutY="41.0" prefHeight="303.0" prefWidth="346.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

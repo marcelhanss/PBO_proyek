@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="726.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #595959, #181818);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas.controller.TransaksiController">
+    <children>
+        <Label layoutX="294.0" layoutY="30.0" prefHeight="58.0" prefWidth="201.0" text="TRANSAKSI" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Label>
+        <Button fx:id="new_button" layoutX="34.0" layoutY="185.0" mnemonicParsing="false" onAction="#newButton" prefHeight="58.0" prefWidth="302.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="NEW" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button fx:id="view_button" layoutX="387.0" layoutY="185.0" mnemonicParsing="false" onAction="#viewButton" prefHeight="58.0" prefWidth="302.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="VIEW" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="cancel_button" layoutX="294.0" layoutY="289.0" mnemonicParsing="false" onAction="#cancel" prefHeight="13.0" prefWidth="137.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="CANCEL" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

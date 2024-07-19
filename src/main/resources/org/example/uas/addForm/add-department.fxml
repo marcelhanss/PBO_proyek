@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="726.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #595959, #181818);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas.controller.AddDepartmentController">
+    <children>
+        <Label layoutX="289.0" layoutY="30.0" prefHeight="58.0" prefWidth="148.0" text="Department" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="185.0" layoutY="168.0" prefHeight="20.0" prefWidth="118.0" text="Depatment Name:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="department_name" layoutX="319.0" layoutY="164.0" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 3;     -fx-border-width: 1;     -fx-text-fill: white; -fx-prompt-text-fill: white;" />
+        <Button fx:id="back_Button" layoutX="57.0" layoutY="284.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Back" textFill="WHITE" />
+        <Button fx:id="submit_Button" layoutX="510.0" layoutY="284.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Submit" textFill="WHITE" />
+      <Label layoutX="200.0" layoutY="124.0" prefHeight="20.0" prefWidth="118.0" text="Department ID:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="departmentId_field" layoutX="319.0" layoutY="120.0" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 3;     -fx-border-width: 1;     -fx-text-fill: white; -fx-prompt-text-fill: white;" />
+      <ComboBox fx:id="manager_combo_box" layoutX="319.0" layoutY="208.0" prefHeight="26.0" prefWidth="178.0" />
+      <Label fx:id="label_combo_box" layoutX="222.0" layoutY="211.0" prefHeight="20.0" prefWidth="73.0" text="Manager" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

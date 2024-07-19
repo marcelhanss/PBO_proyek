@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas.controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #181818;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="#fff7f7" glyphName="DATABASE" layoutX="132.0" layoutY="235.0" size="100" />
+            <Text fill="#fff6f6" layoutX="39.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATABASE MANAGEMENT">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="167.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&amp;">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="148.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIEW">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="486.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameField" layoutX="100.0" layoutY="244.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #181818; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordField" layoutX="99.0" layoutY="284.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #181818; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIconView glyphName="USER" layoutX="70.0" layoutY="266.0" size="20" text="" />
+            <FontAwesomeIconView glyphName="KEY" layoutX="67.0" layoutY="305.0" size="20" />
+            <Button fx:id="loginButton" layoutX="131.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #181818;" text="Login" textFill="WHITE" />
+            <FontAwesomeIconView glyphName="USERS" layoutX="149.0" layoutY="98.0" size="50" />
+            <Text fontSmoothingType="LCD" layoutX="77.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER LOGIN">
+               <font>
+                  <Font name="Arial Black" size="28.0" />
+               </font>
+            </Text>
+            <Button fx:id="changePassButton" layoutX="118.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleChangePassword" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #181818;" text="Change Password" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

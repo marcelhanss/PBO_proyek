@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="438.0" prefWidth="780.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #595959, #181818);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas.controller.ViewTransaksiController">
+   <children>
+      <Button fx:id="back_button" layoutX="347.0" layoutY="374.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Back" />
+      <TableView fx:id="tabel_transaksi" layoutX="14.0" layoutY="61.0" prefHeight="298.0" prefWidth="750.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="347.0" layoutY="14.0" prefHeight="38.0" prefWidth="84.0" text="Transaksi" textFill="white">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="export_button" layoutX="699.0" layoutY="21.0" mnemonicParsing="false" onAction="#export" text="Export" />
+   </children>
+</AnchorPane>

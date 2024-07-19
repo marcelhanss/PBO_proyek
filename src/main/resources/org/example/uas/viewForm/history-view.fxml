@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="850.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #595959, #181818);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uas.controller.HistoryController">
+   <children>
+      <Button fx:id="back_button" layoutX="387.0" layoutY="373.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="76.0" style="-fx-background-color: transparent;     -fx-border-color: white;     -fx-border-radius: 5;     -fx-border-width: 2;     -fx-text-fill: white;     -fx-padding: 10 20;     -fx-font-size: 14px;" text="Back">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TableView fx:id="tabel_history_student" layoutX="451.0" layoutY="66.0" prefHeight="298.0" prefWidth="378.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Label layoutX="336.0" layoutY="14.0" prefHeight="27.0" prefWidth="177.0" text="History Department" textFill="white">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="40.0" prefHeight="27.0" prefWidth="59.0" text="Employee" textFill="white">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="40.0" prefHeight="27.0" prefWidth="59.0" text="Student" textFill="white">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabel_history_employee" layoutX="34.0" layoutY="66.0" prefHeight="298.0" prefWidth="378.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
